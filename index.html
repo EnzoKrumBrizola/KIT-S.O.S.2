@@ -306,7 +306,7 @@ section{padding:48px 0}
 </head>
 <body>
 
-<div class="topbar"><i class="fa-solid fa-rocket"></i> PROMOÇÃO DE LANÇAMENTO: FRETE GRÁTIS ATÉ 30 KM DA LOJA PEDRO MORO</div>
+<div class="topbar"><i class="fa-solid fa-rocket"></i> PROMOÇÃO DE LANÇAMENTO: FRETE GRÁTIS PARA REGIÃO DE CURITIBA E SÃO JOSÉ</div>
 
 <header>
   <div class="wrap bar">
@@ -354,7 +354,7 @@ section{padding:48px 0}
 <div class="confianca">
   <div class="wrap">
     <div class="conf"><i class="fa-solid fa-file-invoice-dollar"></i><span>Nota fiscal<small>CPF ou CNPJ</small></span></div>
-    <div class="conf"><i class="fa-solid fa-truck-fast"></i><span>Frete grátis<small>até 30 km da loja</small></span></div>
+    <div class="conf"><i class="fa-solid fa-truck-fast"></i><span>Frete grátis<small>região de Curitiba e São José</small></span></div>
     <div class="conf"><i class="fa-solid fa-credit-card"></i><span>Pix ou 6x<small>no cartão</small></span></div>
     <div class="conf"><i class="fa-brands fa-whatsapp"></i><span>Atendimento<small>direto no WhatsApp</small></span></div>
   </div>
@@ -719,7 +719,7 @@ section{padding:48px 0}
       </div>
       <div class="faqitem">
         <h4><i class="fa-solid fa-circle-question"></i> Como funciona a entrega gratuita?</h4>
-        <p>Para oficinas até 30 km da nossa loja no Pedro Moro, a entrega é grátis. Mais longe que isso, enviamos por motoboy ou transportadora, e o valor aparece na tela de pagamento.</p>
+        <p>Para oficinas na região de Curitiba e São José, a entrega é grátis. Mais longe que isso, enviamos por motoboy ou transportadora, e o valor aparece na tela de pagamento.</p>
       </div>
       <div class="faqitem">
         <h4><i class="fa-solid fa-circle-question"></i> Vocês emitem nota fiscal para CNPJ de oficina?</h4>
@@ -768,7 +768,7 @@ section{padding:48px 0}
 
 <!-- BARRA DE COMPRA FIXA -->
 <div class="sbar" id="sbar">
-  <span class="sinfo">Kit S.O.S. a partir de <b>R$ 257,30</b> no Pix <span class="hide-m">· frete grátis até 30 km</span></span>
+  <span class="sinfo">Kit S.O.S. a partir de <b>R$ 257,30</b> no Pix <span class="hide-m">· frete grátis na região de Curitiba e São José</span></span>
   <a class="btn btn-o" href="#produto" data-track="barra_fixa"><i class="fa-solid fa-toolbox"></i> Escolher meu kit</a>
 </div>
 
@@ -1026,7 +1026,7 @@ async function calcularFrete() {
     if (d.erro) { out.innerHTML = "<span style='color:#D64545'>CEP não encontrado. Verifique os números.</span>"; return; }
     const cidade = d.localidade.toLowerCase();
     if (cidade === "são josé dos pinhais" || cidade === "curitiba") {
-      out.innerHTML = `<span style="color:var(--verde);font-weight:700"><i class="fa-solid fa-circle-check"></i> Sua região pode ter frete grátis!</span><br><span>A entrega é grátis até 30 km da loja Pedro Moro. Confirmamos a distância e combinamos o horário direto no WhatsApp.</span>`;
+      out.innerHTML = `<span style="color:var(--verde);font-weight:700"><i class="fa-solid fa-circle-check"></i> Sua região pode ter frete grátis!</span><br><span>A entrega é grátis na região de Curitiba e São josé. Confirmamos a distância e combinamos o horário direto no WhatsApp.</span>`;
     } else {
       out.innerHTML = `<i class="fa-solid fa-truck-ramp-box" style="color:var(--laranja)"></i> <strong>Envio via transportadora:</strong><br><span>Entregamos em ${d.localidade} - ${d.uf}. O valor do frete e o prazo aparecem na tela final de pagamento.</span>`;
     }
